@@ -2,10 +2,9 @@ import { Link } from 'react-router-dom';
 import bruschettaImage from './assets/bruschetta.jpg';
 import greekSaladImage from './assets/greek-salad.jpg';
 import lemonDessertImage from './assets/lemon-dessert.jpg';
-import './WeekSpecials.css';
+import './ThisWeekSpecials.css';
 import pages from '../../../utils/pages';
-import MealCard from './MealCard';
-
+import MealCard from './CardMeal';
 const meals = [
   {
     name: 'Greek Salad',
@@ -31,12 +30,12 @@ const meals = [
   },
 ];
 
-const WeekSpecials = () => {
+const ThisWeekSpecials = () => {
   return (
     <section className="container grid week-specials">
       <div className="week-specials-header">
         <h2>This week specials!</h2>
-        <Link className="button-primary" to={pages.get('orderOnline').path}>
+        <Link className="button-primary" to={pages.get('menu').path}>
           Online Menu
         </Link>
       </div>
@@ -47,4 +46,4 @@ const WeekSpecials = () => {
   );
 };
 
-export default WeekSpecials;
+export default ThisWeekSpecials;

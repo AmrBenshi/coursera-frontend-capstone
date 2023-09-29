@@ -3,11 +3,11 @@ import {
   faStarHalfStroke
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './TestimonialCard.css';
+import './CardTestimonial.css';
 
 const ratingLevels = { '0.5': faStarHalfStroke, '1': faStar, };
 
-const TestimonialCard = ({ customer }) => {
+const CardTestimonial = ({ customer }) => {
   return (
     <article className="testimonial-card">
       <img src={customer.image} alt={customer.fullName} />
@@ -26,4 +26,4 @@ const TestimonialCard = ({ customer }) => {
   );
 };
 
-export default TestimonialCard;
+export default CardTestimonial;
